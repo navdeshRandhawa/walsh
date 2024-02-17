@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductListComponent } from './products/product-list/product-list.component';
-import { ProductDetailsComponent } from './products/product-details/product-details.component';
-import { TrashComponent } from './products/trash/trash.component';
+import { ProductListComponent } from './products/components/product-list/product-list.component';
+import { ProductDetailsComponent } from './products/components/product-details/product-details.component';
+import { TrashComponent } from './products/components/trash/trash.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { TrashComponent } from './products/trash/trash.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
