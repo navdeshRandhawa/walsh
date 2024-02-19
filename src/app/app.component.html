@@ -1,36 +1,34 @@
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <span>Welcome</span>
-  <div class="spacer"></div>
-</div>
+<header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">Walsh</a>
+</header>
+
 <div class="container-fluid">
-  <div class="row align-items-start">
-    <div class="col-3">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav me-auto flex-column mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <div class="row">
+
+    <div class="col-1 col-sm-1 col-md-3 col-lg-2 col-xl-2 bg-light sidebar">
+      <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+        <ul id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mt-2">
+          <li class="nav-item">
+            <a class="nav-link active align-middle px-0" aria-current="page" href="/">
+              <i-feather name="home"></i-feather>
+              <span class="ms-1 d-none d-md-inline">Products</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0 align-middle" href="/trash">
+              <i-feather name="trash"></i-feather>
+              <span class="ms-1 d-none d-md-inline">Trash</span>
+            </a>
+          </li>
+
+        </ul>
+
+
+      </div>
     </div>
-    <div class="col">
-      
-        <app-product-list></app-product-list>
-    
-    </div>
+
+    <main class="col col-sm-11 col-md-9 ms-5 ms-sm-auto col-lg-10 px-md-4">
+      <router-outlet></router-outlet>
+    </main>
   </div>
 </div>
-
-<router-outlet></router-outlet>

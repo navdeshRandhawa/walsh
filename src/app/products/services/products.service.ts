@@ -3,29 +3,39 @@ import { Observable, of } from 'rxjs';
 import { Product } from 'src/app/shared/models/products.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductsService {
-
-  constructor() { }
-
   addProducts(items: Product[]) {
     localStorage.setItem('products', JSON.stringify(items));
   }
 
-  getProducts(): Observable<Product[]>{
-    const products =  JSON.parse(localStorage.getItem('products') || JSON.stringify([])) as Product[];
+  getProducts(): Observable<Product[]> {
+    const products = JSON.parse(
+      localStorage.getItem('products') || JSON.stringify([])
+    ) as Product[];
     return of(products);
   }
 
-  getTrashedProducts(): Product[]{
-    const trashedProducts =  JSON.parse(localStorage.getItem('trash') || JSON.stringify([])) as Product[];
+  getTrashedProducts(): Product[] {
+    const trashedProducts = JSON.parse(
+      localStorage.getItem('trash') || JSON.stringify([])
+    ) as Product[];
     return trashedProducts;
   }
 
-  clear(){
-    localStorage.clear();
+  updateTrash(items: Product[]) {
+    localStorage.setItem('trash', JSON.stringify(items));
   }
 
+  addToTrash(item: Product) {
+    const trashedProduts = JSON.parse(
+      localStorage.getItem('trash') || JSON.stringify([])
+    );
+    trashedProduts.push(item);
+    localStorage.setItem('trash', JSON.stringify(trashedProduts));
+  }
+  clear() {
+    localStorage.clear();
+  }
 }
-

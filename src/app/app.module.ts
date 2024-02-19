@@ -7,21 +7,29 @@ import { ProductListComponent } from './products/components/product-list/product
 import { ProductDetailsComponent } from './products/components/product-details/product-details.component';
 import { TrashComponent } from './products/components/trash/trash.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { HomeComponent } from './products/components/home/home.component';
+import { IconsModule } from './icons/icons.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FilterPipe } from './shared/pipes/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductDetailsComponent,
-    TrashComponent
+    TrashComponent,
+    HomeComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    IconsModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
