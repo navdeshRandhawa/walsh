@@ -10,7 +10,7 @@ export const ProductMockData = {
           detailedDescription: 'This high-performance laptop is designed for professionals who require speed and efficiency. With a powerful processor and ample storage, it\'s perfect for demanding tasks.',
           price: 1299.99,
           isNewProduct: true,
-          category: 1,
+          category: "electronics",
           outofStock: false
         },
         {
@@ -23,7 +23,7 @@ export const ProductMockData = {
           detailedDescription: 'The Smartphone X Pro combines cutting-edge technology with a sleek design. Capture stunning photos, enjoy a vibrant display, and stay connected all day with its long-lasting battery.',
           price: 899.99,
           isNewProduct: false,
-          category: 2,
+          category: "electronics",
           outofStock: false
         },
         {
@@ -36,7 +36,7 @@ export const ProductMockData = {
           detailedDescription: 'Escape into your own world with these noise-canceling headphones. The comfortable design and premium sound quality make them perfect for long listening sessions.',
           price: 199.99,
           isNewProduct: false,
-          category: 3,
+          category: "electronics",
           outofStock: true
         },
         {
@@ -49,12 +49,12 @@ export const ProductMockData = {
           detailedDescription: 'Unlock your creative potential with this professional camera kit. It includes a high-resolution camera, multiple lenses, and advanced features for capturing stunning images.',
           price: 1799.99,
           isNewProduct: true,
-          category: 4,
+          category: "electronics",
           outofStock: false
         },
         {
           productId: 5,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/5.png',
           name: 'Smart Fitness Tracker',
           description: 'Stay active and monitor your fitness goals with this feature-packed smart fitness tracker.',
           like: false,
@@ -62,12 +62,12 @@ export const ProductMockData = {
           detailedDescription: 'Achieve your fitness goals with this smart fitness tracker. It tracks your steps, monitors your heart rate, and provides valuable insights to keep you motivated on your fitness journey.',
           price: 79.99,
           isNewProduct: false,
-          category: 5,
+          category: "accessories",
           outofStock: false
         },
         {
           productId: 6,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/6.png',
           name: 'Gaming Console Pro',
           description: 'Experience next-level gaming with the powerful Gaming Console Pro featuring cutting-edge graphics and immersive gameplay.',
           like: false,
@@ -75,12 +75,12 @@ export const ProductMockData = {
           detailedDescription: 'Step into the future of gaming with the Gaming Console Pro. Enjoy stunning graphics, seamless gameplay, and a vast library of games that will take your gaming experience to new heights.',
           price: 499.99,
           isNewProduct: false,
-          category: 6,
+          category: "gaming",
           outofStock: false
         },
         {
           productId: 7,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/7.png',
           name: 'Smart Watch Series 5',
           description: 'Stay connected and track your health with the latest Smart Watch Series 5, featuring a sleek design and advanced features.',
           like: false,
@@ -88,12 +88,12 @@ export const ProductMockData = {
           detailedDescription: 'The Smart Watch Series 5 is more than just a timepiece. It keeps you connected with notifications, tracks your fitness, and offers a variety of apps to enhance your daily life.',
           price: 349.99,
           isNewProduct: true,
-          category: 5,
+          category: "accessories",
           outofStock: false
         },
         {
           productId: 8,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/8.png',
           name: 'Robotic Vacuum Cleaner',
           description: 'Effortlessly maintain a clean home with the Robotic Vacuum Cleaner. Intelligent navigation and powerful suction ensure thorough cleaning.',
           like: false,
@@ -101,12 +101,12 @@ export const ProductMockData = {
           detailedDescription: 'Let the Robotic Vacuum Cleaner take care of your cleaning chores. With smart navigation and powerful suction, it effectively cleans floors and carpets, saving you time and effort.',
           price: 249.99,
           isNewProduct: false,
-          category: 7,
+          category: "electronics",
           outofStock: true
         },
         {
           productId: 9,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/9.png',
           name: 'Wireless Speakers Set',
           description: 'Immerse yourself in crystal-clear audio with these wireless speakers. Perfect for home entertainment and parties.',
           like: false,
@@ -114,12 +114,12 @@ export const ProductMockData = {
           detailedDescription: "Enhance your audio experience with this wireless speakers set. Whether you're watching movies, listening to music, or hosting a party, these speakers deliver impressive sound quality without the hassle of wires.",
           price: 149.99,
           isNewProduct: true,
-          category: 3,
+          category: "electronics",
           outofStock: false
         },
         {
           productId: 10,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/10.png',
           name: 'Smart Coffee Maker',
           description: 'Brew the perfect cup of coffee with the Smart Coffee Maker. Customizable settings and smart features for coffee enthusiasts.',
           like: false,
@@ -127,12 +127,12 @@ export const ProductMockData = {
           detailedDescription: "Indulge in the art of coffee brewing with this Smart Coffee Maker. From adjusting the grind size to setting the brewing time, you have full control over your coffee experience. It's a must-have for coffee enthusiasts.",
           price: 129.99,
           isNewProduct: false,
-          category: 8,
+          category:  "home-appliances",
           outofStock: false
         },
         {
           productId: 11,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/11.png',
           name: 'Ebook Reader Pro',
           description: 'Immerse yourself in a world of literature with the Ebook Reader Pro. Lightweight, portable, and with a glare-free display.',
           like: false,
@@ -140,12 +140,12 @@ export const ProductMockData = {
           detailedDescription: 'Carry your entire library with you wherever you go with the Ebook Reader Pro. The high-resolution display provides a paper-like reading experience, and the long battery life ensures you can read for hours on end.',
           price: 159.99,
           isNewProduct: false,
-          category: 9,
+          category:  "home-appliances",
           outofStock: false
         },
         {
           productId: 12,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/12.png',
           name: 'Smart Security Camera System',
           description: 'Ensure the safety of your home with the Smart Security Camera System. Real-time monitoring and smart features for peace of mind.',
           like: false,
@@ -153,12 +153,12 @@ export const ProductMockData = {
           detailedDescription: 'Keep an eye on your home with the Smart Security Camera System. With motion detection, two-way audio, and remote monitoring, you can always stay connected and secure.',
           price: 299.99,
           isNewProduct: true,
-          category: 10,
+          category:  "home-appliances",
           outofStock: false
         },
         {
           productId: 13,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/13.png',
           name: 'High-Speed Blender',
           description: 'Create delicious and nutritious smoothies with the High-Speed Blender. Powerful motor and durable blades for perfect blending.',
           like: false,
@@ -166,12 +166,12 @@ export const ProductMockData = {
           detailedDescription: "Transform your kitchen with this High-Speed Blender. Whether you're making smoothies, soups, or sauces, its powerful motor and durable blades ensure smooth and consistent results every time.",
           price: 89.99,
           isNewProduct: false,
-          category: 8,
+          category:  "home-appliances",
           outofStock: false
         },
         {
           productId: 14,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/14.png',
           name: 'Home Fitness Equipment Set',
           description: 'Bring the gym to your home with this comprehensive fitness equipment set. Stay active and healthy.',
           like: false,
@@ -179,12 +179,12 @@ export const ProductMockData = {
           detailedDescription: 'Build your home gym with this versatile fitness equipment set. From strength training to cardio workouts, it has everything you need to achieve your fitness goals without leaving your home.',
           price: 499.99,
           isNewProduct: false,
-          category: 5,
+          category: "fitness",
           outofStock: false
         },
         {
           productId: 15,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/4.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/15.png',
           name: 'Smart Thermostat',
           description: 'Efficiently control the temperature of your home with the Smart Thermostat. Energy-saving features and smart integration.',
           like: false,
@@ -192,12 +192,12 @@ export const ProductMockData = {
           detailedDescription: "Take control of your home's climate with the Smart Thermostat. Set schedules, adjust temperatures remotely, and enjoy energy-saving features to create a comfortable and eco-friendly living environment.",
           price: 129.99,
           isNewProduct: false,
-          category: 11,
+          category:  "accessories",
           outofStock: false
         },
         {
           productId: 16,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/3.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/16.png',
           name: 'Wireless Ergonomic Mouse',
           description: 'Enhance your productivity with the Wireless Ergonomic Mouse. Comfortable design and precision for long hours of use.',
           like: false,
@@ -205,12 +205,12 @@ export const ProductMockData = {
           detailedDescription: 'Say goodbye to discomfort with the Wireless Ergonomic Mouse. Its ergonomic design reduces strain on your hand and wrist, while the precision tracking ensures smooth and accurate cursor control.',
           price: 39.99,
           isNewProduct: true,
-          category: 12,
+          category:  "accessories",
           outofStock: false
         },
         {
           productId: 17,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/2.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/17.png',
           name: 'Smart Light Bulbs Pack',
           description: "Transform your home's lighting with the Smart Light Bulbs Pack. Adjustable colors, smart controls, and energy efficiency.",
           like: false,
@@ -218,12 +218,12 @@ export const ProductMockData = {
           detailedDescription: "Create the perfect ambiance with the Smart Light Bulbs Pack. Adjust the color, brightness, and schedule your lighting to match your mood and lifestyle. It's a simple and effective way to enhance your home.",
           price: 49.99,
           isNewProduct: false,
-          category: 13,
+          category:  "home-appliances",
           outofStock: false
         },
         {
           productId: 18,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/18.png',
           name: 'Robotic Lawn Mower',
           description: 'Maintain a pristine lawn effortlessly with the Robotic Lawn Mower. Smart navigation and efficient cutting for a manicured look.',
           like: false,
@@ -231,12 +231,12 @@ export const ProductMockData = {
           detailedDescription: 'Say goodbye to manual lawn maintenance with the Robotic Lawn Mower. Its smart navigation system covers your lawn with precision, keeping it neatly trimmed without any effort on your part.',
           price: 699.99,
           isNewProduct: false,
-          category: 14,
+          category:  "home-appliances",
           outofStock: false
         },
         {
           productId: 19,
-          imageUrl:  'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl:  'https://api.slingacademy.com/public/sample-products/19.png',
           name: 'Virtual Reality Headset',
           description: 'Immerse yourself in virtual worlds with the Virtual Reality Headset. High-resolution display and intuitive controls for an unforgettable experience.',
           like: false,
@@ -244,12 +244,12 @@ export const ProductMockData = {
           detailedDescription: 'Step into the future of entertainment with the Virtual Reality Headset. Explore virtual worlds, play immersive games, and experience content like never before with its high-resolution display and intuitive controls.',
           price: 299.99,
           isNewProduct: true,
-          category: 15,
+          category:  "accessories",
           outofStock: false
         },
         {
           productId: 20,
-          imageUrl: 'https://api.slingacademy.com/public/sample-products/1.png',
+          imageUrl: 'https://api.slingacademy.com/public/sample-products/20.png',
           name: 'Smart Kitchen Scale',
           description: "Accurately measure ingredients and track your nutrition with the Smart Kitchen Scale. Sleek design and easy-to-use features.",
           like: false,
@@ -257,8 +257,33 @@ export const ProductMockData = {
           detailedDescription: "Upgrade your kitchen with the Smart Kitchen Scale. Whether you're baking or monitoring your nutrition, its accurate measurements and user-friendly features make it an essential tool for any home chef.",
           price: 34.99,
           isNewProduct: false,
-          category: 8,
+          category:  "home-appliances",
           outofStock: false
         },
       ]
-}
+};
+
+export const Categories = [
+  "electronics",
+  "accessories",
+  "gaming",
+  "skincare",
+  "groceries",
+  "home-decoration",
+  "home-appliances",
+  "furniture",
+  "tops",
+  "fitness",
+  "womens-dresses",
+  "womens-shoes",
+  "mens-shirts",
+  "mens-shoes",
+  "mens-watches",
+  "womens-watches",
+  "womens-bags",
+  "womens-jewellery",
+  "sunglasses",
+  "automotive",
+  "motorcycle",
+  "lighting"
+]

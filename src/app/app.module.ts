@@ -11,6 +11,7 @@ import { HomeComponent } from './products/components/home/home.component';
 import { IconsModule } from './icons/icons.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './shared/pipes/filter.pipe';
+import { ProductFiltersPipe } from './shared/pipes/product-filters.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FilterPipe } from './shared/pipes/filter.pipe';
     TrashComponent,
     HomeComponent,
     FilterPipe,
+    ProductFiltersPipe,
   ],
   imports: [
     BrowserModule,

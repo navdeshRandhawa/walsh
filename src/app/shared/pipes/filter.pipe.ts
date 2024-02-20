@@ -6,6 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterPipe implements PipeTransform {
   transform(data: any[], searchStr: string): any[] {
+    if (!searchStr) return data;
     return searchStr
       ? data.filter(item =>
           JSON.stringify(Object.values(item))

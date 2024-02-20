@@ -1,1 +1,16 @@
-<p>trash works!</p>
+<div class="col py-3">
+    <h3>Deleted Products</h3>
+    <div class="d-flex flex-wrap product-list">
+        <div *ngFor="let product of trashedProduct" class="card mb-3 me-1 productCard" style="width: 18rem;">
+            <img [src]="product.imageUrl" class="card-img-top" alt="Product Image">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <div class="d-flex justify-content-between mt-auto">
+                    <button class="btn btn-outline-primary" (click)="restoreProduct(product)">Restore</button>
+                    <button class="btn btn-outline-primary" (click)="deleteProduct(product.productId)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

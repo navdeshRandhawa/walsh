@@ -14,7 +14,7 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
-        "build": {
+        "buil d": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/walsh",

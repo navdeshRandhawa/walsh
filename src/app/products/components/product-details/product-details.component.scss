@@ -1,0 +1,35 @@
+.main-description .category {
+  text-transform: uppercase;
+  color: #0093c4;
+}
+
+.main-description .product-title {
+  font-size: 2.5rem;
+}
+
+.old-price-discount {
+  font-weight: 600;
+}
+
+.new-price {
+  font-size: 2rem;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #757575;
+}
+
+.main-img {
+  transition: 0.3s all linear;
+}
+
+.main-img:hover {
+  transform: scale(1.2);
+}
+
+.backButton {
+  padding: 10px;
+}

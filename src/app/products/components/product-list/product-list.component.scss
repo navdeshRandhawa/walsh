@@ -1,5 +1,39 @@
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.addProduct {
+  bottom: 51px;
+  opacity: 1;
+  position: fixed;
+  right: 50px;
+  z-index: 900;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: 0.3s all linear;
+}
+
+.addProduct:hover {
+  transform: scale(1.2);
+  opacity: 1.6;
+}
+
+.product-list {
+  gap: 0.7rem;
+}
+
+.productCard {
+  transition: 0.3s all linear;
+}
+
+.productCard:hover {
+  transform: scale(1.08);
+}
+
+label.required:after {
+  color: inherit;
+  content: '*';
+  font-size: 14px;
+  line-height: 1;
+  padding-left: 4px;
 }

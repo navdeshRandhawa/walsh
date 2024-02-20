@@ -10,6 +10,10 @@ export class ProductsService {
     localStorage.setItem('products', JSON.stringify(items));
   }
 
+  addTrashedProducts(items: any) {
+    localStorage.setItem('trash', JSON.stringify(items));
+  }
+
   getProducts(): Observable<Product[]> {
     const products = JSON.parse(
       localStorage.getItem('products') || JSON.stringify([])
@@ -28,12 +32,20 @@ export class ProductsService {
     localStorage.setItem('trash', JSON.stringify(items));
   }
 
-  addToTrash(item: Product) {
+  moveToTrash(item: Product) {
     const trashedProduts = JSON.parse(
       localStorage.getItem('trash') || JSON.stringify([])
     );
     trashedProduts.push(item);
     localStorage.setItem('trash', JSON.stringify(trashedProduts));
+  }
+
+  restoreProduct(item: Product) {
+    const products = JSON.parse(
+      localStorage.getItem('products') || JSON.stringify([])
+    );
+    products.push(item);
+    this.addProducts(products);
   }
   clear() {
     localStorage.clear();

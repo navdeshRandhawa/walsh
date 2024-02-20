@@ -8,6 +8,7 @@ export interface Product {
   detailedDescription: string;
   price: number;
   isNewProduct: boolean;
-  category: number;
+  category: string;
   outofStock: boolean;
+  discountPercentage?: number;
 }

@@ -6,7 +6,7 @@ import { HomeComponent } from './products/components/home/home.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'product',
     component: HomeComponent,
     title: 'Home page',
   },
@@ -16,11 +16,11 @@ const routes: Routes = [
     title: 'Trash',
   },
   {
-    path: 'details/:id',
+    path: 'detail/:id',
     component: ProductDetailsComponent,
     title: 'Product details',
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: '/product', pathMatch: 'full' },
 ];
 
 @NgModule({
