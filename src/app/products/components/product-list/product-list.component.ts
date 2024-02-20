@@ -21,8 +21,6 @@ import {
 import { Router } from '@angular/router';
 import { Categories } from 'src/assets/mockdata/products';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-// import { Categories } from 'src/assets/mockdata/products';
-// import { BsModalService } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-product-list',
@@ -143,17 +141,11 @@ export class ProductListComponent implements OnInit, OnDestroy {
   }
 
   openSm(content: TemplateRef<any>) {
-    // this.modal = content;
     this.initializeForm();
     this.submitted = false;
     this.modal = this.modalService.open(content, {
       ariaLabelledBy: 'modal',
     }).result;
-    // this.modalService.open(content).result.then(result => {
-    //   if (result === 'save') {
-    //     this.onSubmit();
-    //   }
-    // });
   }
 
   private subscribeToFilterChanges(): void {
